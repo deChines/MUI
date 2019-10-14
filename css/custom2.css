@@ -122,7 +122,7 @@
   display: block;
   height: 100px;
   width: 100px;
-  background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+  background: transparent url(../images/icon-close.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -130,7 +130,7 @@
   display: block;
   height: 100px;
   width: 100px;
-  background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+  background: transparent url(../images/icon-close.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -139,7 +139,7 @@
   display: block;
   height: 200px;
   width: 200px;
-  background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+  background: transparent url(../images/icon-close.png) no-repeat center center;
   background-size: cover;
 }
 
@@ -175,7 +175,7 @@
     top: 0px;
     left: -100px;
     cursor: pointer;
-    background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+    background: transparent url(../images/icon-close.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -187,7 +187,7 @@
     top: 0px;
     left: -100px;
     cursor: pointer;
-    background: transparent url(../images/icon-closecyan.png) no-repeat center center;
+    background: transparent url(../images/icon-close.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -199,7 +199,7 @@
     top: 0px;
     left: -200px;
     cursor: pointer;
-    background: transparent url(../images/icon-closecyan.png) no-repeat center center;
+    background: transparent url(../images/icon-close.png) no-repeat center center;
     background-size: cover;
 }
 
@@ -239,18 +239,6 @@
   width: 100%;
   height: 100%;
   background: transparent url(../images/icon-sort-location.png) no-repeat center center;
-  background-size: cover;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
-  transform: scaleX(-1);
-}
-
-.demo-2 .sort-toniareal{
-
-  width: 100%;
-  height: 100%;
-  background: transparent url(../images/icon-sort-toniareal.png) no-repeat center center;
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
@@ -316,6 +304,97 @@ transform: scaleX(-1);
 -webkit-transform: scaleX(-1);
 transform: scaleX(-1);
 }
+
+/* SORT LOCATIONS------------------------------------------- */
+
+.demo-2 .sort-1{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-1.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-2{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-2.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-3{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-3.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-4{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-4.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-5{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-5.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-6{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-6.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-7{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-7.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.demo-2 .sort-8{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-8.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 /* -------------------------------------------------------- */
 
 .a-a{
@@ -326,17 +405,65 @@ transform: scaleX(-1);
 
 .a-b{
   position: absolute;
+  top: 100px;
+  left: 0;
+}
+.a-c{
+  position: absolute;
   top: 200px;
   left: 0;
 }
 
+.a-d{
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+
+.b-a{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
 .b-b{
+  position: absolute;
+  top: 100px;
+  right: 0;
+}
+
+.b-c{
   position: absolute;
   top: 200px;
   right: 0;
 }
 
-.b-a{
+.b-d{
+  position: absolute;
+  top: 300px;
+  right: 0;
+}
+
+
+.aa-aa{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.aa-bb{
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+
+.bb-bb{
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+.bb-aa{
   position: absolute;
   top: 0;
   right: 0;
