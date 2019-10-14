@@ -1,0 +1,413 @@
+/* Demo 2 */
+@font-face {
+  font-family: 'entypo-selected';
+  src: url("../font/entypo-selected.eot");
+  src: url("../font/entypo-selected.eot?#iefix") format('embedded-opentype'), url("../font/entypo-selected.woff") format('woff'), url("../font/entypo-selected.ttf") format('truetype'), url("../font/entypo-selected.svg#entypo-selected") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'entypo-selected';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  line-height: 1em;
+}
+
+.icon-plus-circle:before { content: '\50'; } /* 'P' */
+.icon-forward:before { content: '\47'; } /* 'G' */
+.icon-search:before { content: '\5a'; } /* 'Z' */
+.icon-link:before { content: '\4c'; } /* 'L' */
+
+.demo-2 .grid {
+
+    top: 50%;
+    left:50%;
+    /* margin: 30px auto; */
+    position: absolute;
+}
+
+.demo-2 .uc-container {
+    width: 100px;
+    height: 100px;
+}
+
+.demo-2 .uc-single,
+.demo-2 .uc-final,
+.demo-2 .uc-initial-content,
+.demo-2 .uc-back,
+.demo-2 .uc-front {
+    /* background: #29a6aa url(../images/noise.png) repeat top left; */
+}
+
+.demo-2 .icon-eye {
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 4px;
+    font-size: 60px;
+    width: 100%;
+    height: 100%;
+    line-height: 145px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* .no-touch .demo-2 .uc-initial-content:hover .icon-eye {
+    color: rgba(255,255,255,0.8);
+    background: rgba(41,166,170,0.7);
+} */
+
+/* .demo-2 .icon-cancel {
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    text-align: center;
+    color: #fff;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -100px;
+    cursor: pointer;
+    background: transparent url(../images/icon-close.png) no-repeat center center;
+    background-size: cover;
+} */
+
+/* .demo-2 .icon-cancel:hover {
+    background: rgba(0,0,0,1);
+} */
+
+.demo-2 .uc-current .uc-container{
+
+}
+
+/* Dan Stuff */
+
+.demo-2 .uc-container--2 {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+
+
+.demo-2 .uc-container--2 .icon-eye{
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+.demo-2 .uc-container--2 .icon-cancel {
+    width: 200px;
+    height: 200px;
+    top: 0;
+    right: 0;
+}
+
+.demo-2 .uc-container--3 {
+    width: 200px;
+    height: 200px;
+    margin: 0;
+}
+
+/* ALL-------------------------------------------------------- */
+#info{
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+  background-size: cover;
+}
+
+#programm{
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+  background-size: cover;
+}
+
+
+#artwork{
+  display: block;
+  height: 200px;
+  width: 200px;
+  background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* flaps-------------------------------------------------------- */
+
+#info .flap {
+  position: absolute;
+	transform-origin: left;
+	left: 100px;
+	transform: rotateY(180deg);
+  transition: all 0.5s 0s ease-out;
+}
+#programm .flap {
+  position: absolute;
+	transform-origin: left;
+	left: 100px;
+	transform: rotateY(180deg);
+  transition: all 0.5s 0s ease-out;
+}
+#artwork .flap {
+  position: absolute;
+	transform-origin: left;
+	left: 200px;
+	transform: rotateY(180deg);
+  transition: all 0.5s 0s ease-out;
+}
+/* icon-cancel ---------------------------------------------------------*/
+#info .icon-cancel {
+    position: absolute;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -100px;
+    cursor: pointer;
+    background: transparent url(../images/icon-close-cyan.png) no-repeat center center;
+    background-size: cover;
+}
+
+#programm .icon-cancel {
+    position: absolute;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -100px;
+    cursor: pointer;
+    background: transparent url(../images/icon-closecyan.png) no-repeat center center;
+    background-size: cover;
+}
+
+#artwork .icon-cancel {
+    position: absolute;
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: -200px;
+    cursor: pointer;
+    background: transparent url(../images/icon-closecyan.png) no-repeat center center;
+    background-size: cover;
+}
+
+/* -------------------------------------------------------- */
+
+
+#info .flap.show {
+  transform: rotateY(360deg);
+/*   transform: scale(1) !important; */
+}
+#programm .flap.show {
+  transform: rotateY(360deg);
+  /* transform: scale(1) !important; */
+}
+
+#artwork .flap.show {
+  transform: rotateY(360deg);
+/*   transform: scale(1) !important; */
+}
+
+
+/* CONTENT IMG-------------------------------------------------------- */
+.demo-2 .info{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-info.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.demo-2 .sort-location{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-location.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.demo-2 .sort-toniareal{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-toniareal.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.demo-2 .sort-time{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-time.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.demo-2 .sort-type{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-sort-type.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.demo-2 .sort-search{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-search.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.demo-2 .programm{
+
+  width: 100%;
+  height: 100%;
+  background: transparent url(../images/icon-programm-2.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+
+.demo-2 .artwork{
+    width: 100%;
+    height: 100%;
+  background: transparent url(../images/icon-artwork-2.png) no-repeat center center;
+  background-size: cover;
+  -moz-transform: scaleX(-1);
+-o-transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
+transform: scaleX(-1);
+}
+/* -------------------------------------------------------- */
+
+.a-a{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.a-b{
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+
+.b-b{
+  position: absolute;
+  top: 200px;
+  right: 0;
+}
+
+.b-a{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
+.location-toni{
+  width: 200px;
+  height: 200px;
+  background: transparent url(../images/icon-toniareal.png) no-repeat center center;
+  background-size: cover;
+}
+
+/* LOGO-------------------------------------------------------- */
+.logo{
+  position: absolute;
+  top: -100px;
+  left: -200px;
+  width: 400px;
+  height: 100px;
+  background: transparent url(../images/logo.png) no-repeat center center;
+  background-size: cover;
+}
+/* fake icons------------------------ */
+
+.fakeinfo{
+  position: absolute;
+  top: 0px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/icon-info.png) no-repeat center center;
+  background-size: cover;
+}
+
+.fakemaps{
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/icon-maps.png) no-repeat center center;
+  background-size: cover;
+}
+
+.fakefavorites{
+  position: absolute;
+  top: 100px;
+  left: 00px;
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/icon-favorites.png) no-repeat center center;
+  background-size: cover;
+}
+
+.fakeawards{
+  position: absolute;
+  top: 200px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/icon-awards.png) no-repeat center center;
+  background-size: cover;
+}
+
+.faketickets{
+  position: absolute;
+  top: 200px;
+  left: 00px;
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/icon-tickets.png) no-repeat center center;
+  background-size: cover;
+}
