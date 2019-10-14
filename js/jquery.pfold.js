@@ -454,9 +454,19 @@
 							// if options.centered is true, we need to center the container.
 							// either ways we need to make sure the container does not move outside the viewport.
 							// let's get the correct translation values for the container's transition
-							var coords = this._getTranslationViewport();
+							 var coords = this._getTranslationViewport();
 
-							//this.$el.addClass( 'uc-current' ).css( { left : coords.ftx, top : coords.fty } );
+               //   var clickPosX = event.clientX;
+               //   var clickPosY = event.clientY;
+               //
+               //   var midX = $(window).width()/2;
+               //   var midY = $(window).height()/2;
+               //
+               //   var offsetX = clickPosX-midX;
+               //   alert(offsetX);
+               //
+							 // $('.grid').addClass( 'uc-current' ).css( {top : offsetX } );
+
 
 							contentTopFront = this.iContent;
 
