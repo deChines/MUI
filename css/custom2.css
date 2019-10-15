@@ -28,10 +28,10 @@
 
 .demo-2 .grid {
 
-    top: 50%;
-    left:50%;
-    /* height: 3000px;
-    width: 3000px; */
+      top: 50%;
+      left:50%;
+    height: 3000px;
+    width: 3000px;
     /* margin: 30px auto; */
     position: absolute;
     /* transition: 2s; */
@@ -129,6 +129,14 @@
   background-size: cover;
 }
 
+#info.black{
+  display: block;
+  height: 100px;
+  width: 100px;
+  background: transparent url(../images/icon-close-black.png) no-repeat center center;
+  background-size: cover;
+}
+
 #programm{
   display: block;
   height: 100px;
@@ -181,6 +189,19 @@
     background: transparent url(../images/icon-close.png) no-repeat center center;
     background-size: cover;
 }
+
+#info .icon-cancel.black {
+    position: absolute;
+    opacity: 1;
+    width: 100px;
+    height: 100px;
+    top: 0px;
+    left: -100px;
+    cursor: pointer;
+    background: transparent url(../images/icon-close-black.png) no-repeat center center;
+    background-size: cover;
+}
+
 
 #programm .icon-cancel {
     position: absolute;

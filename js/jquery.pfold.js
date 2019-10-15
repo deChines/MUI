@@ -462,11 +462,11 @@
                //   var midX = $(window).width()/2;
                //   var midY = $(window).height()/2;
                //
-               //   var offsetX = clickPosX-midX;
-               //   alert(offsetX);
+               //   var offsetX = (clickPosX-midX);
+               //    var offsetY = (clickPosY-midY);
                //
-							 // $('.grid').addClass( 'uc-current' ).css( {top : offsetX } );
-
+							 // $('.grid').addClass( 'uc-current' ).css( {top : clickPosX, left: clickPosX} );
+               //
 
 							contentTopFront = this.iContent;
 
