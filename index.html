@@ -171,8 +171,19 @@
                                                       <span class="icon-eye artwork-4"></span>
                                                     </div>
                                                         <div class="uc-final-content">
-                                                          <div class="fakeartwork-info">
-
+                                                          <div class="fakeartwork-info-1">
+                                                          </div>
+                                                          <div class="crazycolor-fav">
+                                                          </div>
+                                                          <div class= "favbtn">
+                                                          </div>
+                                                          <div class= "addfavbtn">
+                                                          </div>
+                                                          <div class="crazycolor-vote">
+                                                          </div>
+                                                          <div class= "votebtn">
+                                                          </div>
+                                                          <div class= "addvotebtn">
                                                           </div>
                                                       <span class="icon-cancel black big"></span>
                                                     </div>
@@ -216,6 +227,35 @@
                                                     </div>
                                                         <div class="uc-final-content">
 
+                                                      <span class="icon-cancel"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div id="artwork" class="bb-ee">
+                                                <div class="flap">
+                                                  <div class="uc-container uc-container--2">
+                                                    <div class="uc-initial-content">
+                                                      <span class="icon-eye artwork-9"></span>
+                                                    </div>
+                                                        <div class="uc-final-content">
+
+                                                      <span class="icon-cancel"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div id="artwork" class="aa-ee">
+                                                <div class="flap">
+                                                  <div class="uc-container uc-container--2">
+                                                    <div class="uc-initial-content">
+                                                      <span class="icon-eye artwork-8"></span>
+                                                    </div>
+                                                        <div class="uc-final-content">
+
+                                                            <div class="fakeartwork-info-2"></div>
                                                       <span class="icon-cancel"></span>
                                                     </div>
                                                   </div>
@@ -419,6 +459,24 @@
             case 13 : direction = ['right','bottom','bottom'];
                       folds = 3;
                     break;
+            case 14 : direction = ['right','bottom','bottom'];
+                      folds = 3;
+                    break;
+            case 15 : direction = ['right','bottom','bottom'];
+                      folds = 3;
+                    break;
+            case 16 : direction = ['right','bottom','bottom'];
+                      folds = 3;
+                    break;
+            case 17 : direction = ['right','bottom','bottom'];
+                      folds = 3;
+                    break;
+            case 18 : direction = ['right','bottom','bottom'];
+                      folds = 3;
+                    break;
+            case 19 : direction = ['right','bottom','bottom'];
+                      folds = 3;
+                    break;
 					}
 
 					var pfold = $item.pfold( {
@@ -430,7 +488,7 @@
 
 					$item.find('.icon-eye').on( 'click', function() {
 
-              $('body').css('background-color','magenta');
+              $('body').css('background-color','lightgrey'); //#3877ff
               $item.parents('.flap').addClass("show");
 
 							pfold.unfold();
@@ -476,6 +534,16 @@
         $('.menu-1').children('.flap').children('.fakeprogramm').hide();
         $('#programm').show();
     }, 3000);
+
+    $('.addfavbtn').on( 'click', function() {
+      $('.favbtn').show();
+      $('.crazycolor-fav').show();
+    } );
+
+    $('.addvotebtn').on( 'click', function() {
+      $('.votebtn').show();
+      $('.crazycolor-vote').show();
+    } );
 
 
 		</script>
