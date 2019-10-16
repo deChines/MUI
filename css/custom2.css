@@ -21,6 +21,11 @@
   line-height: 1em;
 }
 
+body{
+
+  transition: all 0.5s 0s ease-out;
+ }
+
 .icon-plus-circle:before { content: '\50'; } /* 'P' */
 .icon-forward:before { content: '\47'; } /* 'G' */
 .icon-search:before { content: '\5a'; } /* 'Z' */
@@ -138,6 +143,7 @@
 }
 
 #programm{
+
   display: block;
   height: 100px;
   width: 100px;
@@ -145,6 +151,14 @@
   background-size: cover;
 }
 
+
+#artwork.big.black{
+  display: block;
+  height: 200px;
+  width: 200px;
+  background: transparent url(../images/icon-close-black-big.png) no-repeat center center;
+  background-size: cover;
+}
 
 #artwork{
   display: block;
@@ -227,6 +241,17 @@
     background-size: cover;
 }
 
+#artwork .icon-cancel.black.big {
+    position: absolute;
+    opacity: 1;
+    width: 200px;
+    height: 200px;
+    top: 0px;
+    left: -200px;
+    cursor: pointer;
+    background: transparent url(../images/icon-close-black-big.png) no-repeat center center;
+    background-size: cover;
+}
 /* -------------------------------------------------------- */
 
 
@@ -516,21 +541,135 @@ transform: scaleX(-1);
 }
 
 /* LOGO-------------------------------------------------------- */
-.logo{
+.logo-d{
   position: absolute;
   top: -100px;
   left: -200px;
-  width: 400px;
+  width: 100px;
   height: 100px;
-  background: transparent url(../images/logo.png) no-repeat center center;
-  background-size: cover;
+
 }
+.logo-d .flap{
+  transform-origin: left;
+	transform: rotateY(90deg);
+
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/da.png) no-repeat center center;
+  background-size: cover;
+  transition: all 0.5s 0s ease-out;
+}
+
+#logo-d .flap.show {
+
+  transform: rotateY(0deg);
+/*   transform: scale(1) !important; */
+}
+
+.logo-z{
+  position: absolute;
+  top: -100px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+
+}
+.logo-z .flap{
+  transform-origin: left;
+	transform: rotateY(90deg);
+
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/z.png) no-repeat center center;
+  background-size: cover;
+  transition: all 0.5s 0s ease-out;
+}
+
+#logo-z .flap.show {
+
+  transform: rotateY(0deg);
+  /* transform: scale(1) !important; */
+}
+
+.logo-rest{
+  position: absolute;
+  top: -100px;
+  left: 0px;
+  width: 200px;
+  height: 100px;
+
+}
+.logo-rest .flap{
+  transform-origin: left;
+	transform: rotateY(90deg);
+
+  width: 200px;
+  height: 100px;
+  background: transparent url(../images/rest.png) no-repeat center center;
+  background-size: cover;
+  transition: all 0.5s 0s ease-out;
+}
+
+#logo-rest .flap.show {
+
+  transform: rotateY(0deg);
+/*   transform: scale(1) !important; */
+}
+
+.menu-1{
+
+  position: absolute;
+  top: 00px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+
+}
+.menu-1 .flap{
+  transform-origin: top;
+	transform: rotateX(90deg);
+
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s 0s ease-out;
+}
+
+#menu-1 .flap.show {
+
+  transform: rotateX(0deg);
+/*   transform: scale(1) !important; */
+}
+
+
+.menu-2{
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  width: 100px;
+  height: 100px;
+
+}
+.menu-2 .flap{
+  transform-origin: top;
+	transform: rotateX(90deg);
+
+  width: 100px;
+  height: 100px;
+  transition: all 0.5s 0s ease-out;
+}
+
+#menu-2 .flap.show {
+
+  transform: rotateX(0deg);
+/*   transform: scale(1) !important; */
+}
+
 /* fake icons------------------------ */
 
 .fakeinfo{
   position: absolute;
   top: 0px;
-  left: -100px;
+  left: 00px;
   width: 100px;
   height: 100px;
   background: transparent url(../images/icon-info.png) no-repeat center center;
@@ -539,8 +678,8 @@ transform: scaleX(-1);
 
 .fakemaps{
   position: absolute;
-  top: 100px;
-  left: -100px;
+  top: 00px;
+  left: 00px;
   width: 100px;
   height: 100px;
   background: transparent url(../images/icon-maps.png) no-repeat center center;
@@ -549,8 +688,8 @@ transform: scaleX(-1);
 
 .fakefavorites{
   position: absolute;
-  top: 100px;
-  left: 00px;
+  top: 00px;
+  left: 100px;
   width: 100px;
   height: 100px;
   background: transparent url(../images/icon-favorites.png) no-repeat center center;
@@ -559,20 +698,28 @@ transform: scaleX(-1);
 
 .fakeawards{
   position: absolute;
-  top: 200px;
-  left: -100px;
+  top: 100px;
+  left: 00px;
   width: 100px;
   height: 100px;
   background: transparent url(../images/icon-awards.png) no-repeat center center;
   background-size: cover;
 }
 
-
+.fakeprogramm{
+  position: absolute;
+  top: 00px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  background: transparent url(../images/icon-programm-2.png) no-repeat center center;
+  background-size: cover;
+}
 
 .faketickets{
   position: absolute;
-  top: 200px;
-  left: 00px;
+  top: 100px;
+  left: 100px;
   width: 100px;
   height: 100px;
   background: transparent url(../images/icon-tickets.png) no-repeat center center;

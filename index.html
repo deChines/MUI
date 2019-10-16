@@ -22,24 +22,6 @@
 
 				<div id="grid" class="grid clearfix">
           <!-------------------------------------------->
-          <div class="logo">
-
-          </div>
-          <div class="fakeinfo">
-
-          </div>
-          <div class="fakemaps">
-
-          </div>
-          <div class="fakefavorites">
-
-          </div>
-          <div class="fakeawards">
-
-          </div>
-          <div class="faketickets">
-
-          </div>
 
           <!-------------------------------------------->
           <div id="programm">
@@ -182,7 +164,7 @@
 
 
 
-                                              <div id="artwork" class="bb-cc">
+                                              <div id="artwork" class="bb-cc black big">
                                                 <div class="flap">
                                                   <div class="uc-container uc-container--2">
                                                     <div class="uc-initial-content">
@@ -192,7 +174,7 @@
                                                           <div class="fakeartwork-info">
 
                                                           </div>
-                                                      <span class="icon-cancel"></span>
+                                                      <span class="icon-cancel black big"></span>
                                                     </div>
                                                   </div>
                                                 </div>
@@ -309,6 +291,47 @@
             </div>
           </div>
 
+          <div id="logo-d" class="logo-d">
+            <div class="flap">
+            </div>
+          </div>
+          <div id="logo-z" class="logo-z">
+            <div class="flap">
+            </div>
+          </div>
+          <div id="logo-rest" class="logo-rest">
+            <div class="flap">
+            </div>
+          </div>
+
+          <div id="menu-1" class="menu-1">
+            <div class="flap">
+              <div class="fakeinfo">
+              </div>
+              <div class="fakeprogramm">
+              </div>
+            </div>
+          </div>
+
+
+          <div id="menu-2" class="menu-2">
+            <div class="flap">
+              <div class="fakemaps">
+
+              </div>
+              <div class="fakefavorites">
+
+              </div>
+              <div class="fakeawards">
+
+              </div>
+              <div class="faketickets">
+
+              </div>
+            </div>
+          </div>
+
+
           <!-- <div id="info">
             <div class="flap">
     					<div class="uc-container">
@@ -407,7 +430,9 @@
 
 					$item.find('.icon-eye').on( 'click', function() {
 
+              $('body').css('background-color','magenta');
               $item.parents('.flap').addClass("show");
+
 							pfold.unfold();
 
 					} );
@@ -422,6 +447,35 @@
 
 
 			});
+
+    // $( document ).ready(function() {
+    //       $('.logo').children('.flap').addClass("show").delay( 800 );
+    //
+    //   } );
+    $('#programm').hide();
+    setTimeout(function(){
+      $('.logo-d').children('.flap').addClass("show");
+    }, 1000);
+    setTimeout(function(){
+      $('.logo-z').children('.flap').addClass("show");
+    }, 1500);
+    setTimeout(function(){
+      $('.logo-rest').children('.flap').addClass("show");
+    }, 2000);
+
+    setTimeout(function(){
+      $('.menu-1').children('.flap').addClass("show");
+    }, 2500);
+
+    setTimeout(function(){
+      $('.menu-2').children('.flap').addClass("show");
+    }, 3000);
+
+    setTimeout(function(){
+
+        $('.menu-1').children('.flap').children('.fakeprogramm').hide();
+        $('#programm').show();
+    }, 3000);
 
 
 		</script>
