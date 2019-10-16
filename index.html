@@ -152,20 +152,6 @@
                                               <div class="location-toni aa-aa">
                                               </div>
 
-                                              <div id="artwork" class="bb-bb">
-                                                <div class="flap">
-                                                  <div class="uc-container uc-container--2">
-                                                    <div class="uc-initial-content">
-                                                      <span class="icon-eye artwork-3"></span>
-                                                    </div>
-                                                        <div class="uc-final-content">
-
-                                                      <span class="icon-cancel"></span>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-
                                               <div id="artwork" class="aa-bb">
                                                 <div class="flap">
                                                   <div class="uc-container uc-container--2">
@@ -180,6 +166,22 @@
                                                 </div>
                                               </div>
 
+                                              <div id="artwork" class="bb-bb">
+                                                <div class="flap">
+                                                  <div class="uc-container uc-container--2">
+                                                    <div class="uc-initial-content">
+                                                      <span class="icon-eye artwork-3"></span>
+                                                    </div>
+                                                        <div class="uc-final-content">
+
+                                                      <span class="icon-cancel"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+
+
                                               <div id="artwork" class="bb-cc">
                                                 <div class="flap">
                                                   <div class="uc-container uc-container--2">
@@ -187,7 +189,9 @@
                                                       <span class="icon-eye artwork-4"></span>
                                                     </div>
                                                         <div class="uc-final-content">
+                                                          <div class="fakeartwork-info">
 
+                                                          </div>
                                                       <span class="icon-cancel"></span>
                                                     </div>
                                                   </div>
@@ -199,6 +203,34 @@
                                                   <div class="uc-container uc-container--2">
                                                     <div class="uc-initial-content">
                                                       <span class="icon-eye artwork-5"></span>
+                                                    </div>
+                                                        <div class="uc-final-content">
+
+                                                      <span class="icon-cancel"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div id="artwork" class="bb-dd">
+                                                <div class="flap">
+                                                  <div class="uc-container uc-container--2">
+                                                    <div class="uc-initial-content">
+                                                      <span class="icon-eye artwork-7"></span>
+                                                    </div>
+                                                        <div class="uc-final-content">
+
+                                                      <span class="icon-cancel"></span>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </div>
+
+                                              <div id="artwork" class="aa-dd">
+                                                <div class="flap">
+                                                  <div class="uc-container uc-container--2">
+                                                    <div class="uc-initial-content">
+                                                      <span class="icon-eye artwork-6"></span>
                                                     </div>
                                                         <div class="uc-final-content">
 
@@ -310,32 +342,32 @@
 				$( '.uc-container' ).each( function( i ) {
 
 					var $item = $( this ), direction;
-          let folds = 4;
+          let folds = 1;
 
 					switch( i ) {
-            //info
+            //programm
 						case 0 : direction = ['bottom','bottom'];
                       folds = 2;
                     break;
-            //programm
+            //sort by location
 						case 1 : direction = ['bottom','right','bottom'];
                       folds = 3;
                     break;
             //sort location
-						case 2 : direction = ['right','bottom','right','bottom'];
-                      folds = 4;
+						case 2 : direction = ['right','right'];
+                      folds = 2;
                     break;
             //sort time
-  					case 3 : direction = ['right','bottom','right','bottom'];
-                      folds = 4;
+  					case 3 : direction = ['right','right'];
+                      folds = 2;
                     break;
             //sort time
-            case 4 : direction = ['right','bottom','right','bottom'];
-                      folds = 4;
+            case 4 : direction = ['right','right'];
+                      folds = 2;
                     break;
            //sort time
            case 5 : direction = ['right','right'];
-                      folds = 4;
+                      folds = 2;
                     break;
             //search
             case 6 : direction = ['right','right'];
@@ -344,21 +376,23 @@
             case 7 : direction = ['right','right'];
                       folds = 2;
                     break;
-            case 8 : direction = ['right','bottom','bottom','right'];
-                      folds = 4;
+            // TONI AREAL
+            case 8 : direction = ['right','bottom','bottom','right','bottom'];
+                      folds = 5;
                     break;
-            case 9 : direction = ['right','bottom','right','bottom'];
-                      folds = 4;
+            case 9 : direction = ['right','bottom','bottom'];
+                      folds = 3;
                     break;
-            case 10 : direction = ['right','bottom','right','bottom'];
-                      folds = 4;
+            case 10 : direction = ['right','bottom','bottom'];
+                      folds = 3;
                     break;
-            case 11 : direction = ['right','bottom','right','bottom'];
-                      folds = 4;
+            case 11 : direction = ['right','bottom','bottom'];
+                      folds = 3;
                     break;
-            case 12 : direction = ['right','right'];
-                      folds = 2;
+            case 12 : direction = ['right','bottom','bottom'];
+                      folds = 3;
                     break;
+            // Solar Madness
             case 13 : direction = ['right','bottom','bottom'];
                       folds = 3;
                     break;
