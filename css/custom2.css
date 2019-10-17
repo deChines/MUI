@@ -172,22 +172,27 @@ body{
 
 #info .flap {
   position: absolute;
-	transform-origin: left;
+	-webkit-transform-origin: left;
 	left: 100px;
-	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
   transition: all 0.5s 0s ease-out;
 }
 #programm .flap {
   position: absolute;
-	transform-origin: left;
+	-webkit-transform-origin: left;
+  transform-origin: left;
 	left: 100px;
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
   transition: all 0.5s 0s ease-out;
 }
 #artwork .flap {
   position: absolute;
-	transform-origin: left;
-	left: 200px;
+	-webkit-transform-origin: left;
+  transform-origin: left;
+
+  left: 200px;
+	-webkit-transform: rotateY(180deg);
 	transform: rotateY(180deg);
   transition: all 0.5s 0s ease-out;
 }
@@ -256,17 +261,20 @@ body{
 
 
 #info .flap.show {
+  -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 #programm .flap.show {
+  -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
-  /* transform: scale(1) !important; */
+  /* -webkit-transform: scale(1) !important; */
 }
 
 #artwork .flap.show {
+  -webkit-transform: rotateY(360deg);
   transform: rotateY(360deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 
 
@@ -302,7 +310,7 @@ body{
   background: transparent url(../images/icon-sort-time.png) no-repeat center center;
   background-size: cover;
   -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
+  -o--transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -313,8 +321,8 @@ body{
   height: 100%;
   background: transparent url(../images/icon-sort-type.png) no-repeat center center;
   background-size: cover;
-  -moz-transform: scaleX(-1);
-  -o-transform: scaleX(-1);
+  -moz--webkit-transform: scaleX(-1);
+  -o--webkit-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
@@ -327,8 +335,8 @@ body{
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 
 .demo-2 .programm{
@@ -339,8 +347,8 @@ body{
   background-size: cover;
   -moz-transform: scaleX(-1);
 -o-transform: scaleX(-1);
--webkit-transform: scaleX(-1);
 transform: scaleX(-1);
+-webkit-transform: scaleX(-1);
 }
 
 
@@ -354,8 +362,8 @@ transform: scaleX(-1);
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 .demo-2 .sort-2{
 
@@ -365,8 +373,8 @@ transform: scaleX(-1);
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 .demo-2 .sort-3{
 
@@ -376,8 +384,8 @@ transform: scaleX(-1);
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 .demo-2 .sort-4{
 
@@ -387,8 +395,8 @@ transform: scaleX(-1);
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 .demo-2 .sort-5{
 
@@ -398,8 +406,8 @@ transform: scaleX(-1);
   background-size: cover;
   -moz-transform: scaleX(-1);
   -o-transform: scaleX(-1);
-  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
 }
 .demo-2 .sort-6{
 
@@ -562,8 +570,10 @@ transform: scaleX(-1);
 
 }
 .logo-d .flap{
+  -webkit-transform-origin: left;
+	-webkit-transform: rotateY(90deg);
   transform-origin: left;
-	transform: rotateY(90deg);
+  transform: rotateY(90deg);
 
   width: 100px;
   height: 100px;
@@ -574,8 +584,10 @@ transform: scaleX(-1);
 
 #logo-d .flap.show {
 
+
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 
 .logo-z{
@@ -587,8 +599,10 @@ transform: scaleX(-1);
 
 }
 .logo-z .flap{
+  -webkit-transform-origin: left;
+	-webkit-transform: rotateY(90deg);
   transform-origin: left;
-	transform: rotateY(90deg);
+  transform: rotateY(90deg);
 
   width: 100px;
   height: 100px;
@@ -598,9 +612,9 @@ transform: scaleX(-1);
 }
 
 #logo-z .flap.show {
-
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
-  /* transform: scale(1) !important; */
+  /* -webkit-transform: scale(1) !important; */
 }
 
 .logo-rest{
@@ -612,8 +626,10 @@ transform: scaleX(-1);
 
 }
 .logo-rest .flap{
+  -webkit-transform-origin: left;
+	-webkit-transform: rotateY(90deg);
   transform-origin: left;
-	transform: rotateY(90deg);
+  transform: rotateY(90deg);
 
   width: 200px;
   height: 100px;
@@ -623,9 +639,9 @@ transform: scaleX(-1);
 }
 
 #logo-rest .flap.show {
-
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 
 .menu-1{
@@ -638,8 +654,10 @@ transform: scaleX(-1);
 
 }
 .menu-1 .flap{
+  -webkit-transform-origin: top;
+	-webkit-transform: rotateX(90deg);
   transform-origin: top;
-	transform: rotateX(90deg);
+  transform: rotateX(90deg);
 
   width: 100px;
   height: 100px;
@@ -648,8 +666,9 @@ transform: scaleX(-1);
 
 #menu-1 .flap.show {
 
+  -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 
 
@@ -662,8 +681,10 @@ transform: scaleX(-1);
 
 }
 .menu-2 .flap{
+  -webkit-transform-origin: top;
+	-webkit-transform: rotateX(90deg);
   transform-origin: top;
-	transform: rotateX(90deg);
+  transform: rotateX(90deg);
 
   width: 100px;
   height: 100px;
@@ -672,8 +693,9 @@ transform: scaleX(-1);
 
 #menu-2 .flap.show {
 
+  -webkit-transform: rotateX(0deg);
   transform: rotateX(0deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 .overlay{
   width: 3000px;
@@ -700,8 +722,10 @@ height: 3000px;
   height: 100px;
 }
 .shake .flap{
+  -webkit-transform-origin: left;
+	-webkit-transform: rotateY(90deg);
   transform-origin: left;
-	transform: rotateY(90deg);
+  transform: rotateY(90deg);
 
   width: 300px;
   height: 100px;
@@ -711,9 +735,9 @@ height: 3000px;
 }
 
 #shake .flap.show {
-
+  -webkit-transform: rotateY(0deg);
   transform: rotateY(0deg);
-/*   transform: scale(1) !important; */
+/*   -webkit-transform: scale(1) !important; */
 }
 
 /* fake icons------------------------ */
@@ -887,7 +911,7 @@ transform: scaleX(-1);
     height: 100%;
   background: transparent url(../images/icon-artwork-9.png) no-repeat center center;
   background-size: cover;
-  -moz-transform: scaleX(-1);
+  -moz--webkit-transform: scaleX(-1);
 -o-transform: scaleX(-1);
 -webkit-transform: scaleX(-1);
 transform: scaleX(-1);
