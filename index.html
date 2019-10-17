@@ -370,6 +370,13 @@
               </div>
             </div>
           </div>
+ <div class="overlay">
+
+ </div>
+          <div id="shake" class="shake">
+            <div class="flap">
+            </div>
+          </div>
 
 
           <!-- <div id="info">
@@ -488,7 +495,7 @@
 
 					$item.find('.icon-eye').on( 'click', function() {
 
-              $('body').css('background-color','lightgrey'); //#3877ff
+              $('body').css('background-color','#3877ff'); //#3877ff
               $item.parents('.flap').addClass("show");
 
 							pfold.unfold();
@@ -530,10 +537,20 @@
     }, 3000);
 
     setTimeout(function(){
+      $('.overlay').addClass("show");
+    }, 3500);
+
+    setTimeout(function(){
 
         $('.menu-1').children('.flap').children('.fakeprogramm').hide();
         $('#programm').show();
     }, 3000);
+
+    setTimeout(function(){
+
+        $('.shake').children('.flap').addClass("show");
+        $('#programm').show();
+    }, 4000);
 
     $('.addfavbtn').on( 'click', function() {
       $('.favbtn').show();
@@ -543,6 +560,16 @@
     $('.addvotebtn').on( 'click', function() {
       $('.votebtn').show();
       $('.crazycolor-vote').show();
+    } );
+
+    $('.overlay').on( 'click', function() {
+      $('.overlay').hide();
+      $('.shake').hide();
+    } );
+
+    $('.shake').on( 'click', function() {
+      $('.overlay').hide();
+      $('.shake').hide();
     } );
 
 

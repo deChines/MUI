@@ -675,6 +675,46 @@ transform: scaleX(-1);
   transform: rotateX(0deg);
 /*   transform: scale(1) !important; */
 }
+.overlay{
+  width: 3000px;
+height: 3000px;
+  position: absolute;
+  left: -50vw;
+  top: -50vh;
+  background-color: black;
+
+  opacity: 0;
+  transition: all 0.5s 0s ease-out;
+
+}
+
+.overlay.show{
+  opacity: 0.5;
+}
+
+.shake{
+  position: absolute;
+  top: 300px;
+  left: -100px;
+  width: 300px;
+  height: 100px;
+}
+.shake .flap{
+  transform-origin: left;
+	transform: rotateY(90deg);
+
+  width: 300px;
+  height: 100px;
+  background: transparent url(../images/shake.png) no-repeat center center;
+  background-size: cover;
+  transition: all 0.5s 0s ease-out;
+}
+
+#shake .flap.show {
+
+  transform: rotateY(0deg);
+/*   transform: scale(1) !important; */
+}
 
 /* fake icons------------------------ */
 
